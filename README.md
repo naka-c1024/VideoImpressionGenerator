@@ -60,3 +60,7 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+
+## Note
+
+遊びで作ったものなので参考程度に留めておき、本物のレポートはAIではなく自分で考えてください!
