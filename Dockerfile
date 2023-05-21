@@ -9,7 +9,7 @@ COPY . ./
 # Install production dependencies.
 RUN pip install --no-cache-dir -r requirements.txt
 
-# aliasとtailwindcssのためのnpm設定
+# Install ffmpeg and add alias
 RUN apt update \
     && apt install -y ffmpeg \
     && echo 'alias pm="python main.py"' >> ~/.bashrc

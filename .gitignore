@@ -1,5 +1,4 @@
 .*
 !.gitignore
 !.dockerignore
-__pycache__
 dev_file.md
