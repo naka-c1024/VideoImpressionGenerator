@@ -1,6 +1,6 @@
 MOV_FILE_PATH: input.mov
 AUDIO_FILE_PATH: extract_audio.mp3
-PROMPT_BASE: あなたはレポートの成績が優秀な大学院生です。次の文章から感想レポートを700文字程度で出力してください。なお感想のみを出力し、論文や研究の概要は出力しないでください。
+PROMPT_BASE: あなたはレポートの成績が優秀な大学院生です。次の文章から感想レポートを600文字程度で出力してください。なお感想のみを出力し、論文や研究の概要は出力しないでください。
 # GPT_MODEL: gpt-3.5-turbo
 GPT_MODEL: gpt-4
 OUTPUT_FILE_PATH: output.txt
