@@ -15,13 +15,13 @@
 
 ## Usage
 
-### Git clone
+### 1. Git clone
 
 ```
 git clone https://github.com/naka-c1024/VideoImpressionGenerator.git
 ```
 
-### APIキーの設定
+### 2. APIキーの設定
 
 `.env` ファイルを作成し、OpenAIのAPIキーを設定します。
 
@@ -29,7 +29,7 @@ git clone https://github.com/naka-c1024/VideoImpressionGenerator.git
 echo "OPENAI_API_KEY='XXX'" > .env
 ```
 
-### Yamlファイルの設定
+### 3. Yamlファイルの設定
 
 ```yaml
 MOV_FILE_PATH: /path/to/your/video
@@ -39,7 +39,7 @@ GPT_MODEL: gpt-3.5-turbo
 OUTPUT_FILE_PATH: /path/to/output/file
 ```
 
-### 環境設定
+### 4. 環境設定
 
 #### Dockerを使用する場合
 
@@ -50,14 +50,12 @@ docker run -v $(pwd):/app -p 8080:8080 -it video_impression_generator bash
 
 #### Dockerを使用せずローカル環境で実行したい場合
 
-直接インストールしてください。
-
 ```
 sudo apt install ffmpeg
 pip install -r requirements.txt
 ```
 
-### ツールの実行
+### 5. ツールの実行
 
 ```bash
 python main.py
