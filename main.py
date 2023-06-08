@@ -40,9 +40,6 @@ audio_file = open(AUDIO_FILE_PATH, "rb")
 #Whisperで音声から文字お越し
 transcript  = openai.Audio.transcribe("whisper-1", audio_file)
 
-# 音声から変換された文字列を出力して確認
-# print(transcript.text)
-
 # === ChatGPTで要約を作成 ===
 #ChatGPTプロンプトを作成
 prompt = PROMPT_BASE + transcript.text
@@ -54,9 +51,6 @@ response = openai.ChatCompletion.create(
         {"role": "user", "content": prompt}
     ]
 )
-
-# ChatGPTの回答を出力
-# print(response["choices"][0]["message"]["content"])
 
 # ファイルに書き込む
 with open(OUTPUT_FILE_PATH, "w") as f:
